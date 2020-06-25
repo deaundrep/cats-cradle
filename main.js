@@ -69,9 +69,9 @@ function firstU(string) {
     firstU('You picked the wrong house, bub.') 
     
 challengeBanner(7);
-function minusOne(words) {
-    for (i = 0; i <= words.length; i++) {
-    if(words[i] === 'u') {
+function minusOne(string) {
+    for (i = 0; i <= string.length; i++) {
+    if(string[i] === 'u') {
     console.log(i);
             return true; 
         }
