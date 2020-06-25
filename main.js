@@ -40,7 +40,7 @@ challengeBanner(4)
 let count = 0
 function firstFour(string, start){
     for (let i = start; i < string.length && count < 4; i++){
-    console.log(str[i]);
+    console.log(string[i]);
     count ++;
     }
 }
@@ -57,7 +57,7 @@ function findU(string) {
 }
 findU('You picked the wrong house, bub.')
 
-addChallengeBanner(6);
+challengeBanner(6);
 function firstU(string) {
     for (i = 0; i <= string.length; i++) {
     if(string[i] === 'u') {
