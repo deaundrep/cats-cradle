@@ -4,79 +4,93 @@ function challengeBanner(n) {
 challengeBanner(0)
 
 challengeBanner(1)
-let string = "Regular expressions are for term 2."
 function vowelsOnly(string){
-    for (let i = 0; i < string.length; i++){
-    if ('aeiou'.includes(string[i])){
-    console.log(string[i])
-    }
+let i = 0
+const vowels = 'aeiou'
+    while(i < string.length){
+        if (vowels.includes[string[i]] && count < 5){
+            console.log(string[i])
+        }
+        i = i + 1
     }
 }
-vowelsOnly(string)
+
 
 challengeBanner(2);
 let vowelCount = 0  
-function firstFiveVowels(string) {
-    for (i = 0; i <= string.length; i++) {
-    if ('aeiou'.includes(string[i]) && vowelCount <= 5) {
-    console.log(string[i]);
-    }
-    vowelCount = vowelCount + 1;
-    }
+function firstFiveVowels(str) {
+    
 }   
 firstFiveVowels("Regular expressions are for term 2.")
 firstFiveVowels('Hello!')
 
 challengeBanner(3);
-function thirdCharacter(string) {
-	for(i = 2; i < string.length; i= i + 3) {
-	console.log(string[i]);
-	}
+function thirdCharacter(str) {
+let i = 2
+while (i < str.length){
+    console.log(str[i])
+    i = i + 3
+}	
 }
 thirdCharacter("I am the alfalfa and the omelette.");
 
 challengeBanner(4)
-
-let count = 0
-function firstFour(string, start){
-    for (let i = start; i < string.length && count < 4; i++){
-    console.log(string[i]);
-    count ++;
-    }
-}
 firstFour("Oh hi, I didn't see you there. Welcome.", 4);
 firstFour("Oh hi, I didn't see you there. Welcome.", 36);
 
+function firstFour(str, start){
+    let count = 0
+    let i = start
+    while (i < str.length){
+        if (count < 4){
+            console.log(str[i])
+            count = count + 1
+        }
+        i = i + 1
+    }
+}
+
 challengeBanner(5);
-function findU(string) {
-    for (i = 0; i < string.length; i++) {
-    if(string[i] === 'u') {
-    console.log(i);
+function findU(str) {
+    let = 0
+    while (i < str.length){
+        if(str[i]=== 'u'){
+            console.log(i)
+        }
+        i = i + 1
     }
-    }
+
 }
 findU('You picked the wrong house, bub.')
 
 challengeBanner(6);
-function firstU(string) {
-    for (i = 0; i <= string.length; i++) {
-    if(string[i] === 'u') {
-    console.log(i);
-        return true;
+function firstU(str) {
+    let found = false
+    let = 0
+    while (i < str.length){
+        if(str[i]=== 'u' && found === false){
+            console.log(i)
+            found = true;
+        }
+        i = i + 1
     }
-    } 
 }
     firstU('You picked the wrong house, bub.') 
     
 challengeBanner(7);
-function minusOne(string) {
-    for (i = 0; i <= string.length; i++) {
-    if(string[i] === 'u') {
-    console.log(i);
-            return true; 
+function minusOne(str) {
+    let found = false
+    let = 0
+    while (i < str.length){
+        if(str[i]=== 'u' && found === false){
+            console.log(i)
+            found = true;
         }
+        i = i + 1
     }
-    console.log('-1')
+if (found === false){
+    console.log(-1)
+}
 }
 minusOne('You picked the wrong house, bub.');
 minusOne("I'm Canadian.")
